@@ -250,7 +250,7 @@ head(hourly.data$station_data)
 <p>Now that we have hourly observations for these 4 cities, perhaps we would like to plot the maximum daily temperature for each.</p>
 <p>Input options: - One large dataframe with multiple locations such as the output from <code>getInterpolatedDataByCity</code> - A list of dataframes such as the output from <code>getFilteredStationsByCity</code> - A single dataframe such as the output from <code>getStationsByCity</code></p>
 <pre class="r"><code>plotDailyMax(hourly.data$station_data)</code></pre>
-<p><img src="images/dailyMax.png" alt="dailyMax" /></p>
+<p><img src="../images/dailyMax.png" alt="dailyMax" /></p>
 <p>We can see that the Nairobi weather station is clearly missing data for 6 months of both 2010 and and 2011. The straight line is due to the linear interpolation performed in the prior step.</p>
 </div>
 </div>
