@@ -94,7 +94,7 @@ station.list &lt;- allStations()</code></pre>
 <p>Before we download the data, we can inspect the cities to make sure there are in fact stations close to each city. If some of the stations are too far outside the area of the plot, you might receive a warning message indicating that some points have been excluded. As you can see, this occurs below.</p>
 <p>The following function plots the k-nearest weather stations to a city’s reference point. The black dots are the reference points, and the red dots are the stations, ordered from 1 to <em>k</em> by closeness. I have included <em>k</em> in the function, however it is an optional parameter that will default to 5 if omitted.</p>
 <pre class="r"><code>plotStations(cities, station.list, 5)</code></pre>
-<p><img src="images/cityPlot.png" alt="cityPlot" /></p>
+<p><img src="../images/cityPlot.png" alt="cityPlot" /></p>
 Now let’s download the station data.
 <p>
 
@@ -250,7 +250,7 @@ head(hourly.data$station_data)
 <p>Now that we have hourly observations for these 4 cities, perhaps we would like to plot the maximum daily temperature for each.</p>
 <p>Input options: - One large dataframe with multiple locations such as the output from <code>getInterpolatedDataByCity</code> - A list of dataframes such as the output from <code>getFilteredStationsByCity</code> - A single dataframe such as the output from <code>getStationsByCity</code></p>
 <pre class="r"><code>plotDailyMax(hourly.data$station_data)</code></pre>
-<p><img src="../images/dailyMax.png" alt="dailyMax" /></p>
+<p><img src="images/dailyMax.png" alt="dailyMax" /></p>
 <p>We can see that the Nairobi weather station is clearly missing data for 6 months of both 2010 and and 2011. The straight line is due to the linear interpolation performed in the prior step.</p>
 </div>
 </div>
